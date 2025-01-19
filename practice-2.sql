@@ -20,3 +20,28 @@
 -- | https://www.airbnb.com/rooms/25682427 | 16           |
 
 
+
+-- .mode columns
+--.headers on
+
+
+SELECT 
+--id 
+url 
+-- ,name 
+-- ,body 
+-- ,host_name 
+-- ,host_since 
+-- ,neighborhood 
+-- ,property_type 
+ ,accommodates 
+-- ,bathrooms 
+-- ,bedrooms 
+-- ,price 
+-- ,minimum_nights 
+-- ,maximum_nights 
+-- ,available 
+
+FROM listings
+WHERE 1=1
+AND accommodates >= 16
