@@ -16,3 +16,21 @@
 -- | Burnside               | 10       |
 
 
+SELECT 
+l.neighborhood
+,COUNT(*)
+
+FROM listings l 
+    INNER JOIN reviews r ON r.listing_id = l.ID
+GROUP BY 1
+
+
+-- SELECT 
+
+-- id 
+-- ,listing_id 
+-- ,date_reviewed 
+-- ,reviewer_name 
+-- ,comments 
+
+-- FROM reviews
